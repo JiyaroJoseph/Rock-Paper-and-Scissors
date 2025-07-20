@@ -1,67 +1,42 @@
-<!-- FEATURES
-1. DATA STORED IN LOCALSTORAGE SO PREVIOUS DATA IS NOT LOST IF PAGE REFRESHED OR CLOSED-
-2. PRESS S- SCISSORS, R-ROCK, P-PAPER, A-AUTO PLAY-->
-
 <!DOCTYPE html>
 <html>
   <head>
     <title> Rock Paper Scissors Game </title>
-
     <link rel="stylesheet" href="rock_paper_scissors_(FINAL).css">
-
   </head>
 
-
-
-
-
   <body>
-
     <p class="heading"> Rock Paper Scissors </p>
 
     <button onclick="playgame('rock');" class="rock-button">
       <img src="images/rock-emoji.png" class="rock-img">
     </button>
 
-
     <button onclick="playgame('paper');" class="paper-button">
-      <img src="images\paper-emoji.png" class="paper-img">
+      <img src="images/paper-emoji.png" class="paper-img">
     </button>
 
-    
     <button onclick="playgame('scissors');" class="scissors-button">
       <img src="images/scissors-emoji.png" class="scissors-img">
     </button>
 
-    
     <p class="current-scores"> </p>
     <p class="outcome"> </p>
     <p class="moves"> </p>
-    
 
     <button onclick="score.wins = 0; score.losses = 0; score.draws = 0;
       localStorage.removeItem('score');
       updated_score();
-      
-      document.querySelector('.outcome').innerHTML = '';           // ### CLEARING ALL PARAS WHEN CLICK RESET BUTTON
-      document.querySelector('.moves').innerHTML = '';"            
-
+      document.querySelector('.outcome').innerHTML = '';
+      document.querySelector('.moves').innerHTML = '';" 
       class="reset-button"> 
-  
       Reset Score
     </button>
-
-
 
     <button class="auto-play"  onclick="autoplay();">
       Auto Play
     </button>
 
-
- 
-<!-- ### USE   """SRC"""   TO LINK JS CODE TO HTML FILE ### -->
-    <script src= "rock_paper_scissors_(FINAL).js" > </script>
-
+    <script src="rock_paper_scissors_(FINAL).js"></script>
   </body>
 </html>
-
