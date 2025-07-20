@@ -77,6 +77,11 @@ function autoplay() {
 }
 
 document.body.addEventListener('keydown', (event) => {
+  // Ignore if Ctrl, Alt, or Meta (Command key) is pressed
+  if (event.ctrlKey || event.altKey || event.metaKey) {
+    return;
+  }
+
   if (event.key === 'r' || event.key === 'R') {
     playgame('rock');
   } else if (event.key === 'p' || event.key === 'P') {
