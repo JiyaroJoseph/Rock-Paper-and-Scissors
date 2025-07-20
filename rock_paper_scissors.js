@@ -76,22 +76,6 @@ function autoplay() {
   }
 }
 
-document.body.addEventListener('keydown', (event) => {
-  // Ignore if Ctrl, Alt, or Meta (Command key) is pressed
-  if (event.ctrlKey || event.altKey || event.metaKey) {
-    return;
-  }
-
-  if (event.key === 'r' || event.key === 'R') {
-    playgame('rock');
-  } else if (event.key === 'p' || event.key === 'P') {
-    playgame('paper');
-  } else if (event.key === 's' || event.key === 'S') {
-    playgame('scissors');
-  } else if (event.key === 'a' || event.key === 'A') {
-    autoplay();
-  }
-});
 
 const rst = document.querySelector(".reset-button");
 rst.addEventListener('click', () => {
