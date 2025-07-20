@@ -1,0 +1,161 @@
+body{
+  background-color: black;
+}
+
+
+.heading{
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+
+.rock-img{
+  width: 65px;
+  height: 65px;
+  margin-left: 3px;
+  margin-top: -10px;
+}
+
+
+.rock-button{
+  background-color: black;
+  display: inline-block;
+  border-color: white;
+  border-style: solid;
+  border-width: 3px;
+
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+
+  margin-top: 20px;
+  margin-left: 7px;
+  margin-right: 17px;
+}
+
+
+.rock-button:hover{
+  background-color: gray;
+  cursor: pointer;
+}
+
+
+.paper-img{
+  width: 60px;
+  height: 60px;
+  margin-left: 3px;
+  margin-top: 0px;
+}
+
+
+.paper-button{
+  background-color: black;
+  display: inline-block;
+  border-color: white;
+  border-style: solid;
+  border-width: 3px;
+
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+
+  margin-top: 20px;
+  margin-left: 7px;
+  margin-right: 17px;
+}
+
+
+.paper-button:hover{
+  background-color: gray;
+  cursor: pointer;
+}
+
+
+.scissors-img{
+  width: 60px;
+  height: 60px;
+  margin-left: 3px;
+  margin-top: 0px;
+}
+
+
+.scissors-button{
+  background-color: black;
+  display: inline-block;
+  border-color: white;
+  border-style: solid;
+  border-width: 3px;
+
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+
+  margin-top: 20px;
+  margin-left: 7px;
+  margin-right: 17px;
+}
+
+
+.scissors-button:hover{
+  background-color: gray;
+  cursor: pointer;
+}
+
+
+.reset-button,
+.auto-play{
+  display: block;
+  margin-top: 47px;
+  height: 50px;
+  width: 140px;
+  font-family: Arial;
+  font-size: 18px;
+}
+
+
+.reset-button:hover,
+.auto-play:hover{
+  background-color: rgb(226, 226, 226);
+  cursor: pointer;
+}
+
+
+.current-scores{
+  color: white;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+
+.outcome{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 35px;
+}
+
+
+.moves{
+  color: white;
+  font-size: 18.5px;
+  margin-top: 20px;
+}
+
+
+.playerMove-img{
+  width: 50px;
+  height: 50px;
+  margin-left: 3px;
+  margin-top: 0px;
+  margin-right: 17px;
+}
+
+
+.computerMove-img{
+  width: 50px;
+  height: 50px;
+  margin-left: 3px;
+  margin-top: 0px;
+}
